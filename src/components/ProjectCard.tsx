@@ -13,7 +13,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       delay={index * 120}
     >
       <article className="grid overflow-hidden rounded-[2rem] border border-line bg-panel/90 shadow-panel lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="relative min-h-[320px] overflow-hidden border-b border-line bg-panelSoft p-6 sm:p-8 lg:min-h-[420px] lg:border-b-0 lg:border-r">
+        <div className="relative hidden min-h-[320px] overflow-hidden border-b border-line bg-panelSoft p-6 sm:block sm:p-8 lg:min-h-[420px] lg:border-b-0 lg:border-r">
           {project.visual === '3xample' ? (
             <ThreeXampleVisual project={project} />
           ) : project.visual === 'signature' ? (
