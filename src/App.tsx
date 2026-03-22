@@ -1,4 +1,5 @@
 import { capabilities, projects } from './data/portfolio';
+import { HeroMeshBackground } from './components/HeroMeshBackground';
 import { ProjectCard } from './components/ProjectCard';
 import { Reveal } from './components/Reveal';
 import { SectionHeading } from './components/SectionHeading';
@@ -47,18 +48,19 @@ function App() {
           id="top"
           className="space-y-28 pt-0 sm:space-y-32"
         >
-          <section className="relative min-h-[72vh] py-4 sm:py-8">
-            <div className="grid gap-16 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-end">
+          <section className="relative min-h-[72vh] overflow-hidden py-4 sm:py-8">
+            <HeroMeshBackground />
+            <div className="relative z-10 grid gap-16 lg:grid-cols-[minmax(0,1fr)] lg:items-end">
               <Reveal className="max-w-5xl">
                 <p className="text-sm uppercase tracking-[0.32em] text-textSubtle">
-                  Product designer / creative technologist
+                  Creative Technologist / Building Modern Products
                 </p>
                 <h1 className="mt-6 max-w-5xl font-display text-[3.5rem] font-semibold leading-[0.92] tracking-display text-text sm:text-[5.5rem] lg:text-[7.5rem]">
-                  Designing calm, high-performance digital experiences with editorial precision.
+                  Building polished digital products with frontend craft and Codex.
                 </h1>
                 <p className="mt-8 max-w-2xl text-lg leading-8 text-textMuted sm:text-xl">
-                  I turn product complexity into clear systems, tactile interfaces, and stories that
-                  feel intentional from first glance to final interaction.
+                  I turn product complexity into clear systems, polished interfaces, and intentional
+                  digital experiences built with both design thinking and execution in mind.
                 </p>
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                   <a
@@ -73,19 +75,6 @@ function App() {
                   >
                     Let&apos;s build something precise
                   </a>
-                </div>
-              </Reveal>
-
-              <Reveal
-                className="lg:justify-self-end"
-                delay={140}
-              >
-                <div className="rounded-[2rem] border border-line bg-panel/80 p-6 shadow-panel backdrop-blur-sm">
-                  <p className="text-xs uppercase tracking-[0.28em] text-textSubtle">Value</p>
-                  <p className="mt-5 text-lg leading-8 text-textMuted">
-                    Strategy-level thinking paired with hands-on execution across product, motion,
-                    systems, and coded prototypes.
-                  </p>
                 </div>
               </Reveal>
             </div>
@@ -189,29 +178,20 @@ function App() {
                   </div>
                   <div className="space-y-3 text-sm text-textMuted">
                     <a
-                      href="mailto:hello@ankygautam.com"
+                      href="mailto:ankurgautam@live.com"
                       className="flex items-center justify-between rounded-full border border-white/10 px-5 py-4 transition-all duration-300 hover:border-white/20 hover:bg-white/5 hover:text-text"
                     >
                       <span>Email</span>
-                      <span>hello@ankygautam.com</span>
+                      <span>ankurgautam@live.com</span>
                     </a>
                     <a
-                      href="https://www.linkedin.com"
+                      href="https://www.linkedin.com/in/ankur-gautam-/"
                       rel="noreferrer"
                       target="_blank"
                       className="flex items-center justify-between rounded-full border border-white/10 px-5 py-4 transition-all duration-300 hover:border-white/20 hover:bg-white/5 hover:text-text"
                     >
                       <span>LinkedIn</span>
-                      <span>@ankygautam</span>
-                    </a>
-                    <a
-                      href="https://www.behance.net"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="flex items-center justify-between rounded-full border border-white/10 px-5 py-4 transition-all duration-300 hover:border-white/20 hover:bg-white/5 hover:text-text"
-                    >
-                      <span>Behance</span>
-                      <span>Selected archive</span>
+                      <span>@ankur-gautam-</span>
                     </a>
                   </div>
                 </div>
