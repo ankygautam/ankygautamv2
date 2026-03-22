@@ -42,14 +42,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 className="inline-flex h-11 items-center rounded-full border border-white/10 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5"
                 style={{ color: project.palette.accent }}
               >
-                Go to
+                Visit
               </a>
             ) : (
               <span
                 className="inline-flex h-11 items-center rounded-full border border-white/10 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5"
                 style={{ color: project.palette.accent }}
               >
-                Go to
+                Visit
               </span>
             )}
           </div>
