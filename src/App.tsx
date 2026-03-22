@@ -13,7 +13,7 @@ const navItems = [
 function App() {
   return (
     <div className="min-h-screen bg-canvas text-text">
-      <div className="pointer-events-none fixed inset-0 bg-grain opacity-60" />
+      <div className="pointer-events-none fixed inset-0 hidden bg-grain opacity-60 sm:block" />
       <div className="relative mx-auto max-w-[1440px] px-5 pb-16 sm:px-8 lg:px-12">
         <header className="sticky top-0 z-20 -mx-5 border-b border-white/5 bg-[rgba(9,9,9,0.88)] px-5 backdrop-blur-xl sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12">
           <div className="mx-auto flex max-w-[1440px] flex-col items-start gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">

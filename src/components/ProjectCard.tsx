@@ -39,14 +39,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 href={project.href}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-11 items-center rounded-full border border-white/10 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5"
+                className="inline-flex h-11 w-full items-center justify-center rounded-full border border-white/12 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5 sm:w-auto"
                 style={{ color: project.palette.accent }}
               >
                 Visit
               </a>
             ) : (
               <span
-                className="inline-flex h-11 items-center rounded-full border border-white/10 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5"
+                className="inline-flex h-11 w-full items-center justify-center rounded-full border border-white/12 px-5 text-text transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/5 sm:w-auto"
                 style={{ color: project.palette.accent }}
               >
                 Visit
