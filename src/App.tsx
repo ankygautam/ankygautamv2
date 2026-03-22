@@ -1,5 +1,4 @@
 import { capabilities, projects } from './data/portfolio';
-import { HeroMeshBackground } from './components/HeroMeshBackground';
 import { ProjectCard } from './components/ProjectCard';
 import { Reveal } from './components/Reveal';
 import { SectionHeading } from './components/SectionHeading';
@@ -48,8 +47,7 @@ function App() {
           id="top"
           className="space-y-28 pt-0 sm:space-y-32"
         >
-          <section className="relative min-h-[72vh] overflow-hidden py-4 sm:py-8">
-            <HeroMeshBackground />
+          <section className="relative min-h-[72vh] py-4 sm:py-8">
             <div className="relative z-10 grid gap-16 lg:grid-cols-[minmax(0,1fr)] lg:items-end">
               <Reveal className="max-w-5xl">
                 <p className="text-sm uppercase tracking-[0.32em] text-textSubtle">
